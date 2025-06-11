@@ -1,0 +1,76 @@
+.taskForm {
+    border: 2px solid mediumpurple;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 400px;
+    flex: 0 1 400px;
+}
+
+
+.input,
+.select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid mediumpurple;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: "Gill Sans", "Arial", "Helvetica", sans-serif;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.taskForm textarea {
+    min-height: 120px;
+    resize: vertical;
+    width: 100%;
+
+}
+
+
+.submitButton {
+    background-color: #FFFAF0;
+    color: black;
+    padding: 0.6em 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.errorInput {
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: #ffebee;
+    outline: none;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-family: "Gill Sans", "Arial", "Helvetica", sans-serif;
+    box-sizing: border-box;
+}
+
+.submitButton:hover {
+    background-color: #6A5ACD;
+    color: white;
+    opacity: 0.9;
+    border-radius: 5px;
+    border-color: white;
+}
+
+@media (max-width: 900px) {
+    .taskForm {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+        min-width: 0;
+    }
+    .submitButton {
+        background-color: #6A5ACD;
+        color: white;
+    }
+    .submitButton:hover {
+        background-color: #6A5ACD;
+        color: white;
+    }
+}
+

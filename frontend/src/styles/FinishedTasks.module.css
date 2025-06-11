@@ -1,0 +1,66 @@
+.finishedTasks {
+    border: 2px solid mediumpurple;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: 150px;
+    flex: 1;
+    width: 100%;
+
+}
+
+.taskItem {
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.taskItem li {
+    margin-bottom: 10px;
+}
+
+.taskItem span {
+    overflow-wrap: break-word;
+}
+
+.returnButton {
+    background-color: #FFFAF0;
+    color: black;
+    border-radius: 15px;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.returnButton:hover {
+    background-color: #6A5ACD;
+    color: white;
+}
+
+@media (max-width: 900px) and (hover: none){
+    .finishedTasks {
+        max-width: 100%;
+        width: 100%;
+        min-width: 0;
+        flex: 1;
+        padding: 5px;
+    }
+    .returnButton:hover {
+        background-color: #FFFAF0;
+        color: black;
+    }
+}
+
+@media (max-width: 500px) and (hover: none){
+    .finishedTasks {
+        flex-direction: column;
+    }
+    .returnButton:hover {
+        background-color: #FFFAF0;
+        color: black;
+    }
+}

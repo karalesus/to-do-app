@@ -1,0 +1,102 @@
+.activeTasks {
+    border: 2px solid mediumpurple;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 2;
+    width: 100%;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.taskCard:hover {
+    border: 0.1rem solid mediumpurple;
+    border-radius: 15px;
+}
+
+.taskCard {
+    border: 0.1rem solid transparent;
+    transition: border-color 0.3s ease;
+    padding: 0 10px 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.taskCard p {
+    word-break: break-word;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.deleteButton {
+    background-color: #cf3a15;
+    color: white;
+    padding: 0.6em 1.2em;
+    border-radius: 8px;
+}
+
+.completeButton {
+    background-color: #6A5ACD;
+    color: white;
+    padding: 0.6em 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.deleteButton:hover,
+.completeButton:hover {
+    opacity: 0.9;
+    border-radius: 8px;
+    border-color: white;
+}
+
+@media (max-width: 900px) and (hover: none) {
+    .activeTasks {
+        max-width: 100%;
+        width: 100%;
+        min-width: 0;
+        flex: 1;
+        padding: 5px;
+    }
+
+
+    .deleteButton:hover {
+        background-color: #cf3a15;
+        color: white;
+    }
+
+    .taskCard:hover {
+        border: 0.1rem solid transparent;
+    }
+
+    .completeButton:hover {
+        background-color: #6A5ACD;
+        color: white;
+    }
+}
+
+@media (max-width: 500px)  and (hover: none) {
+    .activeTasks {
+        flex-direction: column;
+    }
+
+    .deleteButton:hover {
+        background-color: #cf3a15;
+        color: white;
+    }
+
+    .taskCard:hover {
+        border: 0.1rem solid transparent;
+    }
+
+    .completeButton:hover {
+        background-color: #6A5ACD;
+        color: white;
+    }
+}
+
